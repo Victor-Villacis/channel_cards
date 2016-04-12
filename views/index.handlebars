@@ -31,9 +31,10 @@
       </div>
     </div>
   </div>
-      {{#nthIteration @index 2}}
+    {#nthIteration @index 2}}
           <!-- markup to insert after third iteration -->
-          <h5> March 30, 2015</h5>
-      {{/nthIteration}}
+        <h5> March 30, 2015</h5>
+        <h5>{{../msg}}</h5>
+    {{/nthIteration}}
   {{/each}}
   </div>
