@@ -1,6 +1,8 @@
 var express =   require('express');
 var app     =   express();
 var exphb   =   require('express-handlebars');
+var Handlebars = require('handlebars');
+
 var PORT    =   process.env.PORT || 3000;
 
 var channel  = require("./data/channel.json");
@@ -28,6 +30,13 @@ app.get('/', function(req, res) {
     msg:formatDate(),
     channelData: channel
   });
+});
+
+ Handlebars.registerHelper('nthIteration', function(index, i, options) {
+    if (index === i) {
+        return options.fn(this);
+    }
+    return options.inverse(this);
 });
 
 
