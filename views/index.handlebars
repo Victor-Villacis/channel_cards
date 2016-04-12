@@ -1,187 +1,34 @@
-
-
-  <div class="container">
-  <p>{{msg}}</p>
-    <div class="row">
-      <div class="col s1">
-        <div class="panel-info"><img src=
-        "https://placeholdit.imgix.net/~text?txtsize=34&txt=C&w=60&h=60"></div>
-      </div>
-      <div class="col s5">
-        <div class="panel-rating">
-          <h5>Nulla convallis dolor quis erat.</h5><br>
-          <p>Sed hendrerit luctus finibus. Sed justo dui, vulputate ac suscipit
-          condimentum, porttitor sed dolor. Ut eu justo at metus dapibus
-          facilisis a quis libero. Integer lectus turpis, pretium a
-          tincidunt.</p>
-        </div>
-      </div>
-      <div class="col s3">
-        <div class="panel-more1">
-          <img src=
-          "https://placeholdit.imgix.net/~text?txtsize=34&txt=C&w=60&h=60">
-          <span>Caption</span>
-        </div>
-      </div>
-      <div class="col s3">
-        <div class="panel-more1">
-          <div>
-            <div>2016-01-03 22:00:00</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s1">
-        <div class="panel-info"><img src=
-        "https://placeholdit.imgix.net/~text?txtsize=34&txt=C&w=60&h=60"></div>
-      </div>
-      <div class="col s5">
-        <div class="panel-rating">
-          <h5>Nulla convallis dolor quis erat.</h5><br>
-          <p>Sed hendrerit luctus finibus. Sed justo dui, vulputate ac suscipit
-          condimentum, porttitor sed dolor. Ut eu justo at metus dapibus
-          facilisis a quis libero. Integer lectus turpis, pretium a
-          tincidunt.</p>
-        </div>
-      </div>
-      <div class="col s3">
-        <div class="panel-more1">
-          <img src=
-          "https://placeholdit.imgix.net/~text?txtsize=34&txt=C&w=60&h=60">
-          <span>Caption</span>
-        </div>
-      </div>
-      <div class="col s3">
-        <div class="panel-more1">
-          <div>
-            <div>2016-01-03 22:00:00</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container">
-  <p>date</p>
-    <div class="row">
-      <div class="col s1">
-        <div class="panel-info"><img src=
-        "https://placeholdit.imgix.net/~text?txtsize=34&txt=C&w=60&h=60"></div>
-      </div>
-      <div class="col s5">
-        <div class="panel-rating">
-          <h5>Nulla convallis dolor quis erat.</h5><br>
-          <p>Sed hendrerit luctus finibus. Sed justo dui, vulputate ac suscipit
-          condimentum, porttitor sed dolor. Ut eu justo at metus dapibus
-          facilisis a quis libero. Integer lectus turpis, pretium a
-          tincidunt.</p>
-        </div>
-      </div>
-      <div class="col s3">
-        <div class="panel-more1">
-          <img src=
-          "https://placeholdit.imgix.net/~text?txtsize=34&txt=C&w=60&h=60">
-          <span>Caption</span>
-        </div>
-      </div>
-      <div class="col s3">
-        <div class="panel-more1">
-          <div>
-            <div>2016-01-03 22:00:00</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s1">
-        <div class="panel-info"><img src=
-        "https://placeholdit.imgix.net/~text?txtsize=34&txt=C&w=60&h=60"></div>
-      </div>
-      <div class="col s5">
-        <div class="panel-rating">
-          <h5>Nulla convallis dolor quis erat.</h5><br>
-          <p>Sed hendrerit luctus finibus. Sed justo dui, vulputate ac suscipit
-          condimentum, porttitor sed dolor. Ut eu justo at metus dapibus
-          facilisis a quis libero. Integer lectus turpis, pretium a
-          tincidunt.</p>
-        </div>
-      </div>
-      <div class="col s3">
-        <div class="panel-more1">
-          <img src=
-          "https://placeholdit.imgix.net/~text?txtsize=34&txt=C&w=60&h=60">
-          <span>Caption</span>
-        </div>
-      </div>
-      <div class="col s3">
-        <div class="panel-more1">
-          <div>
-            <div>2016-01-03 22:00:00</div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col s1">
-        <div class="panel-info"><img src=
-        "https://placeholdit.imgix.net/~text?txtsize=34&txt=C&w=60&h=60"></div>
-      </div>
-      <div class="col s5">
-        <div class="panel-rating">
-          <h5>Nulla convallis dolor quis erat.</h5><br>
-          <p>Sed hendrerit luctus finibus. Sed justo dui, vulputate ac suscipit
-          condimentum, porttitor sed dolor. Ut eu justo at metus dapibus
-          facilisis a quis libero. Integer lectus turpis, pretium a
-          tincidunt.</p>
-        </div>
-      </div>
-      <div class="col s3">
-        <div class="panel-more1">
-          <img src=
-          "https://placeholdit.imgix.net/~text?txtsize=34&txt=C&w=60&h=60">
-          <span>Caption</span>
-        </div>
-      </div>
-      <div class="col s3">
-        <div class="panel-more1">
-          <div>
-            <div>2016-01-03 22:00:00</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 <div class="container">
-<p>date</p>
-    <div class="row">
+  <h5>{{msg}}</h5>
+  {{#each channelData}}
+  <div class="card-panel grey lighten-5 z-depth-1">
+    <div class="row valign-wrapper">
       <div class="col s1">
-        <div class="panel-info"><img src=
-        "https://placeholdit.imgix.net/~text?txtsize=34&txt=C&w=60&h=60"></div>
+        <img alt="" class="circle responsive-img align" src="{{subjectPhotoUrl}}"> 
       </div>
       <div class="col s5">
-        <div class="panel-rating">
-          <h5>Nulla convallis dolor quis erat.</h5><br>
-          <p>Sed hendrerit luctus finibus. Sed justo dui, vulputate ac suscipit
-          condimentum, porttitor sed dolor. Ut eu justo at metus dapibus
-          facilisis a quis libero. Integer lectus turpis, pretium a
-          tincidunt.</p>
+        <div>
+          <h5 class="align2">{{title}}</h5>
+          <br/>
+          <p>{{description}}</p>
         </div>
       </div>
       <div class="col s3">
-        <div class="panel-more1">
-          <img src=
-          "https://placeholdit.imgix.net/~text?txtsize=34&txt=C&w=60&h=60">
-          <span>Caption</span>
+        <div class="align">
+          <img alt="" class="circle responsive-img" src=
+          "{{instructorPhotoUrl}}"> <span>{{instructorName}}</span>
         </div>
       </div>
       <div class="col s3">
-        <div class="panel-more1">
+        <div >
           <div>
-            <div>2016-01-03 22:00:00</div>
+            <div class="align">
+              {{time}}
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-
+  {{/each}}
+  </div>

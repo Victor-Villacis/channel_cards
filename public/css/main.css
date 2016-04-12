@@ -1,8 +1,15 @@
-.list-group li {
-    list-style: none;
-}
-.panel-info, .panel-rating, .panel-more1 {
-    float: left;
-    margin: 0 10px;
+
+.align{
+   position: relative;
+    top: -67px;
 }
 
+.align2{
+   position: relative;
+    top: -25px;
+}
+
+
+div {
+  padding: 10px
+}

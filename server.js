@@ -8,7 +8,8 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 
-var jsonObj = require("./channel.json");
+var channel  = require("./channel.json");
+// console.log(channel)
 
 app.engine('handlebars', exphb({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
@@ -28,6 +29,7 @@ var d = new Date(),
 app.get('/', function(req, res) {
     res.render('index', {
     msg:formatDate(),
+    channelData: channel
   });
 });
 
