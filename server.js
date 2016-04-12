@@ -1,12 +1,7 @@
 var express =   require('express');
-var http    =   require('http');
 var app     =   express();
 var exphb   =   require('express-handlebars');
 var PORT    =   process.env.PORT || 3000;
-var bodyParser = require('body-parser');
-app.use(bodyParser.urlencoded({
-    extended: false
-}));
 
 var channel  = require("./channel.json");
 // console.log(channel)
@@ -35,7 +30,7 @@ app.get('/', function(req, res) {
 
 
 
-//used to serve static files in the public folder and can be accesed by labeling the name of the file in the url bar after /public
+//Serving Static Files
 app.use('/public', express.static('public'));
 app.listen(PORT, function() {
   console.log("Listening on port:" + PORT);
