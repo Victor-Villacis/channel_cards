@@ -3,13 +3,15 @@ var app     =   express();
 var exphb   =   require('express-handlebars');
 var PORT    =   process.env.PORT || 3000;
 
-var channel  = require("./channel.json");
+var channel  = require("./data/channel.json");
 // console.log(channel)
 
 app.engine('handlebars', exphb({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
+//Serving Static Files
+app.use('/public', express.static('public'));
 app.use('./css', express.static('public/css'));
-
+app.use('./js', express.static('public/js'));
 
 
 //Time Stamp
@@ -29,9 +31,6 @@ app.get('/', function(req, res) {
 });
 
 
-
-//Serving Static Files
-app.use('/public', express.static('public'));
 app.listen(PORT, function() {
   console.log("Listening on port:" + PORT);
 });

@@ -1,15 +1,22 @@
 
-.align{
+.time, .align {
    position: relative;
-    top: -67px;
+    top: -65px;
 }
 
-.align2{
+.title {
    position: relative;
     top: -25px;
 }
 
-
-div {
-  padding: 10px
+.instructor {
+  position: relative;
+  top: -25px;
+  right: -25px;
 }
+
+.description {
+  position: relative;
+  top: -35px;
+}
+
