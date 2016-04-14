@@ -9,7 +9,7 @@ var channel  = require("./data/channel.json");
 // console.log(channel)
 
 app.engine('handlebars', exphb({defaultLayout: 'main'}));
-app.set('view engine', 'handlebars'); 
+app.set('view engine', 'handlebars');
 //Serving Static Files
 app.use('/public', express.static('public'));
 app.use('./css', express.static('public/css'));
