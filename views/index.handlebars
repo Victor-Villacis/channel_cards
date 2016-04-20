@@ -1,7 +1,6 @@
 <div class="container">
   <h5>{{msg}}</h5>
   {{#each channelData}}
-  {{@key}}
   <div class="card-panel grey lighten-5 z-depth-1">
     <div class="row valign-wrapper">
       <div class="col s1">
@@ -31,10 +30,10 @@
       </div>
     </div>
   </div>
-    {#nthIteration @index 2}}
+    {{#nthIteration @index 4}}
           <!-- markup to insert after third iteration -->
         <h5> March 30, 2015</h5>
-        <h5>{{../msg}}</h5>
     {{/nthIteration}}
   {{/each}}
+  <h5>{{./msg}}</h5>
   </div>

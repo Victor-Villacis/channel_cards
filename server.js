@@ -6,7 +6,7 @@ var Handlebars = require('handlebars');
 var PORT    =   process.env.PORT || 3000;
 
 var channel  = require("./data/channel.json");
-// console.log(channel)
+//Oconsole.log(channel)
 
 app.engine('handlebars', exphb({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
@@ -31,7 +31,7 @@ app.get('/', function(req, res) {
     channelData: channel
   });
 });
-
+//Hamdlebars Helper Function
  Handlebars.registerHelper('nthIteration', function(index, i, options) {
     if (index === i) {
         return options.fn(this);
@@ -41,5 +41,5 @@ app.get('/', function(req, res) {
 
 
 app.listen(PORT, function() {
-  console.log("Listening on port:" + PORT);
+  console.log("Listening on this port number:" + PORT);
 });
